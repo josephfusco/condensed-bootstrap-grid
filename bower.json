@@ -4,5 +4,9 @@
   "main": [
     "scss/_grid.scss"
   ],
+   "ignore": [
+      ".gitignore",
+      "README.md"
+    ],
   "license": "MIT"
 }
