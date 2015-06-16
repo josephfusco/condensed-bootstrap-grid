@@ -17,6 +17,12 @@ Configuration options within the partial are set to Bootstrap 3 defaults, but ca
 + Breakpoints screen widths
 + Breakpoint container widths
 
+##### Bower
+
+```
+bower install cbg
+```
+
 ### Usage
 
 Just like Bootstrap 3. Even though the compiled output does not match the bootstrap grid perfectly (combined classes with some reordering), it behaves the exact same way.
