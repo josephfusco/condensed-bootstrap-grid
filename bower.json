@@ -1,0 +1,8 @@
+{
+  "name": "condensed-bootstrap-grid",
+  "version": "1.0.0",
+  "main": [
+    "scss/_grid.scss"
+  ],
+  "license": "MIT"
+}

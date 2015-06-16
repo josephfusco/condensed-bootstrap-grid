@@ -1,0 +1,79 @@
+/**
+ Condensed Bootstrap Grid
+ Author: Joseph Fusco http://josephfus.co/
+ Version: 1.0.0
+ License: MIT
+ 
+ This mimics the Bootstrap 3 grid system, contained within a SASS partial
+ http://getbootstrap.com/css/#grid-options
+*/
+
+// Config ----------------------------------------------------------------------
+// ~ screenwidths are followed by their respective container widths & are
+//   assigned to the device prefix. ie prefix: ($screen-width, $container-width)
+// ~ if $screen-width is 0, breakpoint will not be wrapped in a media query
+
+$breakpoints: (
+  xs: (0px, 100%),
+  sm: (768px, 750px),
+  md: (992px, 970px),
+  lg: (1200px, 1170px)
+);
+
+$total-grid-cols: 12;
+$gutter: 15px;
+
+// -----------------------------------------------------------------------------
+
+[class*="col-"] {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: $gutter;
+  padding-left: $gutter;
+}
+
+.container, .container-fluid {
+  padding-right: $gutter;
+  padding-left: $gutter;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+.row {
+  margin-right: -$gutter;
+  margin-left: -$gutter;
+}
+
+@mixin device-size($size) {
+  @for $i from $total-grid-cols through 1 {
+    $width: percentage($i / $total-grid-cols);
+    .col-#{$size}-#{$i} {
+        width: $width;
+    }
+    .col-#{$size}-pull-#{$i} {
+        right: $width;
+    }
+    .col-#{$size}-push-#{$i} {
+        left: $width;
+    }
+    .col-#{$size}-offset-#{$i} {
+        margin-left: $width;
+    }
+  }
+}
+
+@each $size, $width in $breakpoints {
+  $screen-width: nth($width, 1);
+  $container-width: nth($width, 2);
+  @if $screen-width == 0px {
+     @include device-size($size);
+  } @else {
+    @media (min-width: $screen-width) {
+      .container {
+        width: $container-width;
+      }
+      @include device-size($size);
+    }
+  }
+}
