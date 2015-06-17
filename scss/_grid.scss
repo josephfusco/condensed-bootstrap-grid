@@ -1,19 +1,7 @@
-/*!
+/*! Condensed Bootstrap Grid | MIT License | github.com/whitetail/condensed-bootstrap-grid */
 
-  Condensed Bootstrap Grid
-  Author: Whitetail Development, Inc.
-  Contributors: Joseph Fusco http://josephfus.co/
-  License: MIT
-
-  The entire Bootstrap 3 grid system, all within within a 2kb Sass partial
-
-  Credit: Based off of Bootstrap, Copyright (c) 2011-2015 Twitter, Inc.
-
-*/
-
-// -----------------------------------------------------------------------------
-
-$breakpoints: ( // prefix: ($min-screen-width, $container-width)
+// prefix: ($min-screen-width, $container-width)
+$breakpoints: ( 
   xs: (0px, 100%),
   sm: (768px, 750px),
   md: (992px, 970px),
@@ -22,8 +10,6 @@ $breakpoints: ( // prefix: ($min-screen-width, $container-width)
 
 $total-grid-cols: 12;
 $gutter: 15px;
-
-// -----------------------------------------------------------------------------
 
 %gutter {
   padding-right: $gutter;
