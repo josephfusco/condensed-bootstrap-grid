@@ -1,6 +1,6 @@
 # Condensed Bootstrap Grid
 
-Packs the entire grid system into 1 Sass partial (4kb).
+Packs the entire grid system into 1 Sass partial (2kb).
 
 ### Setup
 
