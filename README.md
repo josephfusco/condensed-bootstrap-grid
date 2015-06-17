@@ -30,3 +30,7 @@ Just like Bootstrap 3. Even though the compiled output does not match the bootst
 ### What about the official Bootstrap Sass?
 
 The official [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) works just great but requires a little more setup if you only want the grid. This also requires you to download the entire bootstrap sass directory where as the condensed bootstrap grid is only one 4kb file.
+
+### Acknowledgement
+
+[Bootstrap](http://getbootstrap.com/), Copyright 2011-2015 Twitter, Inc.
