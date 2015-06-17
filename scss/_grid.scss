@@ -35,6 +35,9 @@ $gutter: 15px;
     display: table;
     content: '';
   }
+  &:after {
+	  clear: both;
+  }
 }
 
 .container, .container-fluid {
