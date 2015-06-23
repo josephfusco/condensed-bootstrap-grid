@@ -6,10 +6,10 @@ $breakpoints: (
   sm: (768px, 750px),
   md: (992px, 970px),
   lg: (1200px, 1170px)
-);
+) !default;
 
-$total-grid-cols: 12;
-$gutter: 15px;
+$total-grid-cols: 12 !default;
+$gutter: 15px !default;
 
 %gutter {
   padding-right: $gutter;

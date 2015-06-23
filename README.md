@@ -4,23 +4,36 @@ Packs the entire grid system into 1 Sass partial (2kb).
 
 ### Setup
 
-Download and place `_grid.scss` inside of your Sass project. Import the grid partial and your are done.
+Download and place `_grid.scss` inside of your Sass project.
+
+Import the grid partial.
 
 ```scss
 @import "grid";
 ```
 
-Configuration options within the partial are set to Bootstrap 3 defaults, but can easily be changed.
+Grid is already set with Bootstrap 3 defaults, but can easily be changed.
 
-+ Gutter size
-+ Number of columns
-+ Breakpoints screen widths
-+ Breakpoint container widths
+####Changing Defaults
 
-##### Bower
+Define values in your _config.scss.
+For example if we wanted a 5px gutter, 24 columns, and an additional `xl` breakpoint we would do the following.
 
 ```
-bower install cbg
+// Gutter size
+$gutter: 5px;
+
+// Number of columns
+$total-grid-cols: 24;
+
+// Breakpoint name: $min-screen-width, $container-width
+$breakpoints: (
+	xs: (0px, 100%),
+	sm: (768px, 750px),
+	md: (992px, 970px),
+	lg: (1200px, 1170px),
+	xl: (1300px, 1270px)
+);
 ```
 
 ### Usage
