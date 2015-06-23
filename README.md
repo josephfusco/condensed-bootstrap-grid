@@ -19,7 +19,7 @@ Grid is already set with Bootstrap 3 defaults, but can easily be changed.
 Define values in your _config.scss.
 For example if we wanted a 5px gutter, 24 columns, and an additional `xl` breakpoint we would do the following.
 
-```
+```scss
 // Gutter size
 $gutter: 5px;
 
