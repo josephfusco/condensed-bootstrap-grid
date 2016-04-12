@@ -1,4 +1,4 @@
-# Condensed Bootstrap Grid
+# Condensed Bootstrap 3 Grid
 
 Packs the entire grid system into 1 Sass partial (2kb).
 
