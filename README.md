@@ -38,7 +38,7 @@ $breakpoints: (
 
 ### Usage
 
-Just like Bootstrap 3. Even though the compiled output does not match the bootstrap grid perfectly (combined classes with some reordering), it behaves the exact same way.
+Just like Bootstrap 3.
 
 ### What about the official Bootstrap Sass?
 
