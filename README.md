@@ -1,6 +1,6 @@
 # Condensed Bootstrap Grid
 
-Packs the entire version 3 grid system into 1 Sass partial (2kb).
+Packs the entire version 3 grid system into tiny Sass partial.
 
 ### Setup
 
@@ -42,7 +42,7 @@ Just like Bootstrap 3.
 
 ### What about the official Bootstrap Sass?
 
-The official [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) works just great but requires a little more setup if you only want the grid. This also requires you to download the entire bootstrap sass directory where as the condensed bootstrap grid is only one 4kb file.
+The official [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) works just great but requires a little more setup if you only want the grid. This also requires you to download the entire bootstrap sass directory where as the condensed bootstrap grid is only one small file.
 
 ### Acknowledgement
 
