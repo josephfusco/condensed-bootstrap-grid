@@ -1,8 +1,8 @@
 # Condensed Bootstrap Grid
 
-Packs the entire version 3 grid system into tiny Sass partial.
+A fully configurable & self contained grid system based on Bootstrap 3.
 
-### Setup
+## Setup
 
 Download and place `_grid.scss` inside of your Sass project.
 
@@ -14,29 +14,39 @@ Import the grid partial.
 
 Grid is already set with Bootstrap 3 defaults, but can easily be changed.
 
-####Changing Defaults
+## Options
 
-Define values in your _config.scss.
-For example if we wanted a 5px gutter, 24 columns, and an additional `xl` breakpoint we would do the following.
+|Option 		  	|Type	|Default		|Description				   		|
+|---				|---	|---			|---							|
+|`$cbg__total-grid-cols`	|Number	|12   			|Total number of grid columns  				|
+|`$cbg__gutter`			|Length	|15px			|Size of the gutters between columns			|
+|`$cbg__namespace`		|String	|none			|Adds a namespace before classnames			|
+|`$cbg__name--col`   		|String	|"col"			|Text generated in classname				|
+|`$cbg__name--pull`   		|String	|"pull"			|Text generated in classname				|
+|`$cbg__name--push`   		|String	|"push"			|Text generated in classname				|
+|`$cbg__name--offset`  		|String	|"offset"		|Text generated in classname				|
+|`$cbg__name--clearfix`		|String	|"clearfix"		|Text generated in classname				|
+|`$cbg__name--container`	|String	|"container"		|Text generated in classname				|
+|`$cbg__name--container-fluid`	|String	|"container-fluid"	|Text generated in classname				|
+|`$cbg__breakpoints`		|Map	|Bootstrap 3 defaults	|See next section|
 
-```scss
-// Gutter size
-$gutter: 5px;
+### Breakpoints
 
-// Number of columns
-$total-grid-cols: 24;
+Breakpoints can be configured in a separate option. The defaults are set to Bootstrap 3 defaults grid dimensions.
 
-// Breakpoint name: $min-screen-width, $container-width
-$breakpoints: (
+Simply override the Sass map `cbg__breakpoints`.
+
+```
+// Generated string for classname: ($min-screen-width, $container-width)
+$cbg__breakpoints: (
 	xs: (0px, 100%),
 	sm: (768px, 750px),
 	md: (992px, 970px),
-	lg: (1200px, 1170px),
-	xl: (1300px, 1270px)
-);
+	lg: (1200px, 1170px)
+)
 ```
 
-### Usage
+## Usage
 
 Just like Bootstrap 3.
 
@@ -46,4 +56,4 @@ The official [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) works just
 
 ### Acknowledgement
 
-[Bootstrap](http://getbootstrap.com/), Copyright 2011-2015 Twitter, Inc.
+[Bootstrap](http://getbootstrap.com/)
