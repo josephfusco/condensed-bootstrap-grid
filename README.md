@@ -14,6 +14,10 @@ Import the grid partial.
 
 Grid is already set with Bootstrap 3 defaults, but can easily be changed.
 
+## Usage
+
+The default classnames generated and markup are identical to Bootstrap 3, however, [nearly everything is configurable](#options).
+
 ## Options
 
 |Option 		  	|Type	|Default		|Description				   		|
@@ -45,10 +49,6 @@ $cbg__breakpoints: (
 	lg: (1200px, 1170px)
 )
 ```
-
-## Usage
-
-Just like Bootstrap 3.
 
 ### What about the official Bootstrap Sass?
 
