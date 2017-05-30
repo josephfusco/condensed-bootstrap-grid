@@ -4,15 +4,11 @@ A fully configurable & self contained grid system based on Bootstrap 3.
 
 ## Setup
 
-Download and place `_grid.scss` inside of your Sass project.
-
-Import the grid partial.
+Download and place `_grid.scss` inside of your Sass project & import the grid partial.
 
 ```scss
 @import "grid";
 ```
-
-Grid is already set with Bootstrap 3 defaults, but can easily be changed.
 
 ## Usage
 
