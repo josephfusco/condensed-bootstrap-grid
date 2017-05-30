@@ -1,12 +1,11 @@
 {
   "name": "condensed-bootstrap-grid",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "main": [
-    "scss/_grid.scss"
+    "_grid.scss"
   ],
    "ignore": [
-      ".gitignore",
-      "README.md"
+      ".gitignore"
     ],
   "license": "MIT"
 }
