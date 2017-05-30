@@ -10,6 +10,12 @@ Download and place `_grid.scss` inside of your Sass project & import the grid pa
 @import "grid";
 ```
 
+### Bower
+
+```sh
+bower install cbg
+```
+
 ## Usage
 
 The default classnames generated and markup are identical to Bootstrap 3, however, [nearly everything is configurable](#options).
