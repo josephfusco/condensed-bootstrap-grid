@@ -36,7 +36,7 @@ Breakpoints can be configured in a separate option. The defaults are set to Boot
 
 Simply override the Sass map `cbg__breakpoints`.
 
-```
+```scss
 // Generated string for classname: ($min-screen-width, $container-width)
 $cbg__breakpoints: (
 	xs: (0px, 100%),
