@@ -28,7 +28,7 @@ Grid is already set with Bootstrap 3 defaults, but can easily be changed.
 |`$cbg__name--clearfix`		|String	|"clearfix"		|Text generated in classname				|
 |`$cbg__name--container`	|String	|"container"		|Text generated in classname				|
 |`$cbg__name--container-fluid`	|String	|"container-fluid"	|Text generated in classname				|
-|`$cbg__breakpoints`		|Map	|Bootstrap 3 defaults	|See next section|
+|`$cbg__breakpoints`		|Map	|Bootstrap 3 defaults	|[See next section](#breakpoints)			|
 
 ### Breakpoints
 
